@@ -26,6 +26,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["firstname", "lastname"]
 
     @property
     def fullname(self):
@@ -38,4 +39,4 @@ class User(AbstractBaseUser, PermissionsMixin):
         return f"{self.lastname}_{self.firstname}"
 
     def __str__(self):
-        return self.fullname
+        return self.email

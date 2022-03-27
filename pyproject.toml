@@ -21,6 +21,8 @@ django-taggit = "^2.1.0"
 Pillow = "^9.0.1"
 django-versatileimagefield = "^2.2"
 flake8 = "^4.0.1"
+django-stubs = "^1.10.0"
+coverage = "^6.3.2"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^22.1.0", allow-prereleases = true}
