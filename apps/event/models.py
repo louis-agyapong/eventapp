@@ -68,6 +68,7 @@ class Event(TimeStampedModel):
     tags = TaggableManager(
         _("Tags"),
         help_text=_("Improve discoverability of your event by adding tags relevant to the subject matter."),
+        blank=True,
     )
     attendees = models.ManyToManyField(User, verbose_name=_("Users"), blank=True)
     location = models.CharField(_("Location"), max_length=100)
