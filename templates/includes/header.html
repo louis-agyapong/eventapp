@@ -1,0 +1,35 @@
+{% load static %}
+
+<header>
+    <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+    <nav class="navbar navbar-expand-md navbar-light py-3" aria-label="Main">
+      <div class="container">
+        <a href="/blog/" class="navbar-brand text-dark">
+          <img src="{% static 'img/logo-bloggr.svg' %}" alt="Boost Theme" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav mt-3 mt-md-0 ms-auto">
+            <a class="nav-link px-md-3" href="pages.html">Pages</a>
+            <a class="nav-link px-md-3" href="style.html">Style</a>
+            <a class="nav-link px-md-3" href="docs/intro.html">Docs</a>
+          </div>
+          <a
+            class="btn btn-primary btn-sm rounded-pill mt-3 mt-md-0 ms-md-3"
+            href="https://themes.getbootstrap.com/product/boost/"
+            >Buy now</a
+          >
+        </div>
+      </div>
+    </nav>
+  </header>
