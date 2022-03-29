@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Event | {{event.title}}{% endblock title %}
+
+{% block header %}
+    {% include "includes/header.html" %}
+{% endblock header %}
+
+{% block content %}
+<div class="bg-cover d-flex align-items-center min-vh-75" style="background-image: url(assets/img/conference.jpg)">
+    <div class="bg-overlay bg-black opacity-50"></div>
+    <div class="container text-white z-10">
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <h1 class="display-4">{{event.title}}</h1>
+          <p class="lead">{{event.sub_title}}</p>
+          <a class="btn btn-light rounded-pill" href="#">Buy tickets</a>
+        </div>
+        <div class="col-md-4">
+          <div class="">
+            <dl>
+              <dt class="fw-light mb-1">When</dt>
+              <dd class="h5">June 21, 2021</dd>
+              <dt class="fw-light mb-1">Where</dt>
+              <dd class="h5">Barcelona</dd>
+              <dt class="fw-light mb-1">Who</dt>
+              <dd class="h5">22 Speakers</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+
+{% block footer %}
+    {% include "includes/footer.html" %}
+{% endblock footer %}
